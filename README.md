@@ -91,6 +91,11 @@ Wrapped Metadata: https://bridge-wnftapi.herokuapp.com/w/30621074404344072569499
 
 </center>
 
+
+## HTS Protocol integration
+
+Even though it was not discussed before the grant started, to be completely compatible with Hedera, we have implemented support for HTS. The project testing HTS can be found here: https://github.com/XP-NETWORK/testing-hedera
+
 # TODO:
 
 ## `Milestone 4` — Mainnet Integration & Deployment
