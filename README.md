@@ -96,6 +96,17 @@ Wrapped Metadata: https://bridge-wnftapi.herokuapp.com/w/30621074404344072569499
 
 Even though it was not discussed before the grant started, to be completely compatible with Hedera, we have implemented support for HTS. The project testing HTS can be found here: https://github.com/XP-NETWORK/testing-hedera
 
+
+### On-chain testnet transactions:
+1. Hedera -> BSC:<br/>
+1.1 Hedera: https://testnet.hederaexplorer.io/search-details/transaction/0.0.46848048-1667842806-789581623<br/>
+1.2 BSC: https://testnet.bscscan.com/tx/0x73ee20d7eccbc6cdd34bd114563b7a0ddd0b19aa60a31066dd19b13f35678507
+
+2. BSC -> Hedera:<br/>
+2.1 BSC: https://testnet.bscscan.com/tx/0xecd40b9a9f7777170f8b0a3a63395286446a0eb5980dacbf4c92216cd8e3b40f<br/>
+2.2 Hedera: https://hashscan.io/testnet/transactionsById/0.0.48164294-1667843141-032714511
+
+
 # TODO:
 
 ## `Milestone 4` — Mainnet Integration & Deployment
