@@ -17,6 +17,8 @@ We will develop smart contracts that will:
 7. [Pause](https://github.com/XP-NETWORK/XP.network-HECO-Migration/blob/dist/dist/Minter.d.ts#L224-L226)/[Unpause](https://github.com/XP-NETWORK/XP.network-HECO-Migration/blob/dist/dist/Minter.d.ts#L245-L247) for maintenance or if compromised
 8. [Reimburse](https://github.com/XP-NETWORK/XP.network-HECO-Migration/blob/dist/dist/Minter.d.ts#L201-L203) the bridge validators their expenses
 
+***
+
 ## `Milestone 2` — Integrating into the Live Bridge
 Length - 3 weeks
 
@@ -32,6 +34,7 @@ Length - 3 weeks
 5. Integrating Hedera in [TX fee estimation](https://github.com/XP-NETWORK/xpjs/blob/secretjs/src/consts.ts#L397-L404)
 6. Accessing [Hedera Testnet RPC](https://github.com/XP-NETWORK/xpjs/blob/baa6255425a037f3865ff49e694d6e48a08399f7/src/factory/factories.ts#L258)
 
+***
 
 ## `Milestone 3` — Testing, Fixing Bugs & Documenting
 Length - 1 week 
@@ -39,73 +42,56 @@ Length - 1 week
 1. We have provided a basic [tutorial](https://github.com/XP-NETWORK/testing-hedera) that can interact with the deployed smart contracts and backend service.
 2. We've [testing](#a-transferring-hedera---bsc) the contracts in the testnet environment, see below
 
-### A. Transferring Hedera - BSC:
-
-<center>
-
-![1](/assets/1.png)
-
-Leaving Hedera: https://hashscan.io/#/testnet/transaction/0.0.46848048-1659885929-115666383?t=1659885938.284143490
-
-</center>
-
-<center>
-
-![2](/assets/2.png)
-
-Arrival on BSC: https://testnet.bscscan.com/tx/0xed22f0b8824c68092a63b69fda48f8cd395d95804fb8231aad01eee64b36d8aa
-
-</center>
-
-<center>
-
-![3](/assets/3.png)
-
-Wrapped Metadata: https://bridge-wnftapi.herokuapp.com/w/30619491249427434594666527864
-
-</center>
-
-### B. Transferring BSC - Hedera:
-
-<center>
-
-![4](/assets/4.png)
-
-Departure from BSC: https://testnet.bscscan.com/tx/0xd8b4bba50854ad7d47e53e26cc9b3b392dc50f6183e8858063b55e46f31c8802
-
-</center>
-
-<center>
-
-![5](/assets/5.png)
-
-Arrival on Hedera: https://hashscan.io/#/testnet/transaction/0.0.46848048-1659971757-720467479?t=1659971770.479248003
-
-</center>
-
-<center>
-
-![6](/assets/6.png)
-
-Wrapped Metadata: https://bridge-wnftapi.herokuapp.com/w/30621074404344072569499986808
-
-</center>
-
-
 ## HTS Protocol integration
 
 Even though it was not discussed before the grant started, to be completely compatible with Hedera, we have implemented support for HTS. The project testing HTS can be found here: https://github.com/XP-NETWORK/testing-hedera
 
 
-### On-chain testnet transactions:
-1. Hedera -> BSC:<br/>
-1.1 Hedera: https://testnet.hederaexplorer.io/search-details/transaction/0.0.46848048-1667842806-789581623<br/>
-1.2 BSC: https://testnet.bscscan.com/tx/0x73ee20d7eccbc6cdd34bd114563b7a0ddd0b19aa60a31066dd19b13f35678507
+### A. Transferring Hedera -> BSC:
 
-2. BSC -> Hedera:<br/>
-2.1 BSC: https://testnet.bscscan.com/tx/0xecd40b9a9f7777170f8b0a3a63395286446a0eb5980dacbf4c92216cd8e3b40f<br/>
-2.2 Hedera: https://hashscan.io/testnet/transactionsById/0.0.48164294-1667843141-032714511
+A.1 From Hedera: https://testnet.hederaexplorer.io/search-details/transaction/0.0.46848048-1667842806-789581623
 
+<center>
+
+![From Hedera](assets/fromHedera.png)
+
+</center>
+
+A.2 To BSC: https://testnet.bscscan.com/tx/0x73ee20d7eccbc6cdd34bd114563b7a0ddd0b19aa60a31066dd19b13f35678507
+
+<center>
+
+![To BSC](assets/toBSC.png)
+
+</center>
+
+<center>
+
+Wrapped Metadata: https://bridge-wnftapi.herokuapp.com/w/30766269814604970566081589601
+
+![Wrapped Metadata](assets/wrapped.png)
+
+</center>
+
+### B. Transferring BSC - Hedera:
+
+B.1 From BSC: https://testnet.bscscan.com/tx/0xecd40b9a9f7777170f8b0a3a63395286446a0eb5980dacbf4c92216cd8e3b40f
+
+<center>
+
+![From BSC](assets/fromBSC.png)
+
+</center>
+
+B.2 To Hedera: https://hashscan.io/testnet/transactionsById/0.0.48164294-1667843141-032714511
+
+<center>
+
+![To Hedera](assets/toHedera.png)
+
+</center>
+
+***
 
 # TODO:
 
