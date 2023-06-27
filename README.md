@@ -37,72 +37,22 @@ Length - 3 weeks
 ***
 
 ## `Milestone 3` — Testing, Fixing Bugs & Documenting
-Length - 1 week 
 
-1. We have provided a basic [tutorial](https://github.com/XP-NETWORK/testing-hedera) that can interact with the deployed smart contracts and backend service.
-2. We've [testing](#a-transferring-hedera---bsc) the contracts in the testnet environment, see below
-
-## HTS Protocol integration
-
-Even though it was not discussed before the grant started, to be completely compatible with Hedera, we have implemented support for HTS. The project testing HTS can be found here: https://github.com/XP-NETWORK/testing-hedera
-
-
-### A. Transferring Hedera -> BSC:
-
-A.1 From Hedera: https://testnet.hederaexplorer.io/search-details/transaction/0.0.46848048-1667842806-789581623
-
-<center>
-
-![From Hedera](assets/fromHedera.png)
-
-</center>
-
-A.2 To BSC: https://testnet.bscscan.com/tx/0x73ee20d7eccbc6cdd34bd114563b7a0ddd0b19aa60a31066dd19b13f35678507
-
-<center>
-
-![To BSC](assets/toBSC.png)
-
-</center>
-
-<center>
-
-Wrapped Metadata: https://bridge-wnftapi.herokuapp.com/w/30766269814604970566081589601
-
-![Wrapped Metadata](assets/wrapped.png)
-
-</center>
-
-### B. Transferring BSC - Hedera:
-
-B.1 From BSC: https://testnet.bscscan.com/tx/0xecd40b9a9f7777170f8b0a3a63395286446a0eb5980dacbf4c92216cd8e3b40f
-
-<center>
-
-![From BSC](assets/fromBSC.png)
-
-</center>
-
-B.2 To Hedera: https://hashscan.io/testnet/transactionsById/0.0.48164294-1667843141-032714511
-
-<center>
-
-![To Hedera](assets/toHedera.png)
-
-</center>
+1. [Basic tutorial](https://github.com/XP-NETWORK/testing-hedera)
+2. HTS protocol integration
+3. Testnet transactions:
+   1. [Hedera -> BSC](./3.Milestone.md#a-transferring-hedera---bsc)
+   2. [BSC -> Hedera](./3.Milestone.md#b-transferring-bsc---hedera)
 
 ***
 
-# TODO:
-
 ## `Milestone 4` — Mainnet Integration & Deployment
-Length - 1 week 
 
-1. Deploying the contracts in the Mainnet environment
-2. Integrating the mainnet Wallet
-3. Integrating the mainnet NFT-Indexer
-4. Integrating the mainnet validators
-5. Plugging Hedera in the heartbeat
-6. Adding Hedera to the Bridge NFT-Indexer
-7. Integrating Hedera in the bridge UI
-8. Testing the Integrated Hedera in the mainnet
+1. [Deploying the contracts in the Mainnet environment](./4.Milestone.md#1-mainnet-contracts)
+2. [Integrating the mainnet Wallet](./4.Milestone.md#2-mainnet-wallets-integration)
+3. [Integrating the mainnet NFT-Indexer](./4.Milestone.md#3-nft-indexer)
+4. [Integrating the mainnet validators](./4.Milestone.md#4-mainnet-validators)
+5. [Plugging Hedera in the heartbeat](./4.Milestone.md#5-hertbeat-integration)
+6. [Adding Hedera to the Bridge NFT-Indexer](./4.Milestone.md#3-nft-indexer)
+7. [Integrating Hedera in the bridge UI](./4.Milestone.md#6-ui-integration)
+8. [Testing the Integrated Hedera in the mainnet](./4.Milestone.md#7-mainnet-transactions)
